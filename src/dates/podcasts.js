@@ -1,0 +1,74 @@
+export default [
+  {
+    title: 'Are you a Perplexed Mind Person?',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+    img: '/pod/pod-1.png',
+    imgText: 'Perplexed Mind',
+    eps: 'Eps. 1',
+    author: 'Jane Doe',
+    authorImg: '/',
+    date: 'Sep 22, 2021',
+    tags: ['mind-behaviour', 'health'],
+  },
+  {
+    title: 'Are you a Perplexed Mind Person?',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+    img: '/pod/pod-2.png',
+    imgText: 'Social Class',
+    eps: 'Eps. 2',
+    author: 'Jane Doe',
+    authorImg: '/',
+    date: 'Sep 22, 2021',
+    tags: ['mind-behaviour', 'health'],
+  },
+  {
+    title: 'Are you a Perplexed Mind Person?',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+    img: '/pod/pod-3.png',
+    imgText: 'Self–confidence',
+    eps: 'Eps. 3',
+    author: 'Jane Doe',
+    authorImg: '/',
+    date: 'Sep 22, 2021',
+    tags: ['mind-behaviour', 'health'],
+  },
+  {
+    title: 'Are you a Perplexed Mind Person?',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+    img: '/pod/pod-4.png',
+    imgText: 'Women’s right',
+    eps: 'Eps. 4',
+    author: 'Jane Doe',
+    authorImg: '/',
+    date: 'Sep 22, 2021',
+    tags: ['mind-behaviour', 'health'],
+  },
+  {
+    title: 'Are you a Perplexed Mind Person?',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+    img: '/pod/pod-5.png',
+    imgText: 'Tesla Autopilot',
+    eps: 'Eps. 5',
+    author: 'Jane Doe',
+    authorImg: '/',
+    date: 'Sep 22, 2021',
+    tags: ['mind-behaviour', 'health'],
+  },
+  {
+    title: 'Are you a Perplexed Mind Person?',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+    img: '/pod/pod-6.png',
+    imgText: 'Perplexed Mind',
+    eps: 'Eps. 6',
+    author: 'Jane Doe',
+    authorImg: '/',
+    date: 'Sep 22, 2021',
+    tags: ['mind-behaviour', 'health'],
+  },
+]

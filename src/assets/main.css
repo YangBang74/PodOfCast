@@ -1,35 +1,72 @@
-@import './base.css';
+@import 'tailwindcss';
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+body {
+  background-color: #fff;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+.contain {
+  margin-inline: auto;
+  padding: 0 140px;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+.text-red {
+  color: #cd4631;
+}
+
+.text-gray {
+  color: #4d4d4d;
+}
+
+.text-blue {
+  color: #81adc8;
+}
+
+.drop-shadow {
+  box-shadow: 3px 3px 0 0 #00000041;
+}
+
+.primary-bg {
+  background-color: #fff;
+}
+
+.secont-bg {
+  background-color: #f7ede8;
+}
+
+.acsent-bg {
+  background-color: #edf3f7;
+}
+
+@media (max-width: 1280px) {
+  .contain {
+    padding: 0 75px;
   }
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
+@media (max-width: 1024px) {
+  .contain {
+    padding: 0 50px;
   }
+}
+@media (max-width: 769px) {
+  .contain {
+    padding: 0 20px;
+  }
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url('./fonts/MontserratAlternates-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url('./fonts/MontserratAlternates-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
