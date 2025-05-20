@@ -8,6 +8,7 @@ import 'vue3-carousel/carousel.css'
 import { Carousel, Slide } from 'vue3-carousel'
 import Services from '@/components/Icons/Services.vue'
 import SectionVector from '@/components/UI/SectionVector.vue'
+import Quote from '@/components/Sections/Quote.vue'
 
 const pod = podcast
 </script>
@@ -82,4 +83,5 @@ const pod = podcast
       </div>
     </div>
   </section>
+  <Quote />
 </template>
