@@ -2,7 +2,6 @@
 const props = defineProps<{
   text: string
   btnType?: number
-  top?: number
   to: string
 }>()
 </script>

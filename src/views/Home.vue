@@ -25,10 +25,8 @@ const pod = podcast
         <p class="mt-10 mb-10 text-gray max-w-88 mx-auto">
           We cover all kinds of categories and a weekly special guest.
         </p>
-        <Button :btn-type="1" text="SUBSCRIBE" />
+        <Button :btn-type="1" text="SUBSCRIBE" to="/" />
       </div>
-
-      <YouTube :type="3" />
     </div>
     <Carousel
       itemsToShow="auto"
@@ -43,11 +41,13 @@ const pod = podcast
         <PodcastImg :img="item.img" :text="item.imgText" />
       </Slide>
     </Carousel>
-    <div class="py-20">
+    <div class="pt-20 pb-40">
       <div class="contain">
-        <div class="flex items-center justify-between border-y py-10">
+        <div class="flex md:flex-row flex-col gap-y-10 items-center justify-between border-y py-10">
           <h1 class="font-bold text-4xl">Supported by:</h1>
-          <div class="flex items-center justify-between gap-5 w-1/2">
+          <div
+            class="flex sm:items-center justify-between gap-5 md:w-1/2 w-full sm:flex-row flex-col gap-y-10 items-start"
+          >
             <Services name="spotify-text" />
             <Services name="google-text" />
             <Services name="youtube-text" />
@@ -55,6 +55,31 @@ const pod = podcast
         </div>
       </div>
     </div>
-    <SectionVector />
+    <SectionVector color="red" />
+  </section>
+  <section class="my-40">
+    <div class="contain">
+      <h1 class="font-bold text-4xl text-center md:w-1/2 w-full mx-auto">
+        Talk. Listen. Get inspired by every minute of it.
+      </h1>
+      <div class="my-20 flex justify-between md:items-end items-center md:flex-row flex-col">
+        <div class="flex flex-col justify-center gap-y-10">
+          <div class="h-69 w-69 flex justify-center mx-auto items-center">
+            <img src="/home/think.png" alt="Some man think" />
+          </div>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
+          </p>
+        </div>
+        <div class="flex flex-col justify-center gap-y-10">
+          <div class="h-69 w-69 flex justify-center mx-auto items-center">
+            <img src="/home/ideas.png" alt="Some man think" />
+          </div>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
