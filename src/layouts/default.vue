@@ -4,7 +4,7 @@ import Button from '@/components/UI/Button.vue'
 </script>
 
 <template>
-  <header class="fixed w-full left-0 secont-bg">
+  <header class="fixed w-full left-0 secont-bg z-100">
     <div class="contain">
       <div class="flex flex-row items-center justify-between font-bold py-3">
         <img src="/logo.svg" alt="PotOfCast" class="h-15" />

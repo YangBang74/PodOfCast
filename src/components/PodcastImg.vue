@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Services from './Icons/Services.vue'
+import Icon from './Icons/Icon.vue'
 
 const props = defineProps<{
   img: string
@@ -13,9 +13,9 @@ const props = defineProps<{
     :style="{ backgroundImage: `url(${props.img})` }"
   >
     <div class="flex gap-2.5 items-center self-end">
-      <Services name="google" />
-      <Services name="spotify" class="text-white" />
-      <Services name="youtube" />
+      <Icon name="google" />
+      <Icon name="spotify" class="text-white" />
+      <Icon name="youtube" />
     </div>
     <h3 class="font-bold mb-2 text-left text-blue text-3xl">{{ props.text }}</h3>
   </div>

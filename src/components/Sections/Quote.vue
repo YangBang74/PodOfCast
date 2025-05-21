@@ -1,5 +1,5 @@
 <template>
-  <section class="my-20">
+  <section class="my-40">
     <div class="contain">
       <div class="secont-bg py-10 md:px-20 px-10 relative">
         <h1 class="font-bold text-center text-4xl">

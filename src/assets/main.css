@@ -22,6 +22,10 @@ body {
   color: #81adc8;
 }
 
+.bg-blue {
+  background-color: #edf3f7;
+}
+
 .drop-shadow {
   box-shadow: 3px 3px 0 0 #00000041;
 }
@@ -32,6 +36,10 @@ body {
 
 .secont-bg {
   background-color: #f7ede8;
+}
+
+.shadow-2:hover {
+  box-shadow: 10px 10px 0 #81adc8;
 }
 
 .acsent-bg {

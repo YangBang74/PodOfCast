@@ -1,17 +1,19 @@
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
   color: string
+  class?: string
 }>()
 </script>
 
 <template>
   <svg
-    class="absolute bottom-[-80px] left-1/2 translate-[0 -100%] mx-auto"
+    class="absolute bottom-[-80px] left-1/2 translate-[0 -100%] mx-auto z-10"
     width="46"
     height="154"
     viewBox="0 0 46 154"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    :class="props.class"
   >
     <path
       v-if="color === 'red'"
