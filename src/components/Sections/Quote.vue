@@ -1,6 +1,6 @@
 <template>
   <section class="my-40">
-    <div class="contain">
+    <div class="container">
       <div class="secont-bg py-10 md:px-20 px-10 relative">
         <h1 class="font-bold text-center text-4xl">
           <span class="text-red text-8xl">“</span><br />

@@ -3,8 +3,12 @@
 body {
   background-color: #fff;
   font-family: 'Montserrat Alternates', sans-serif;
-  border: 1px solid red;
   overflow-x: hidden;
+}
+
+.container {
+  margin-inline: auto;
+  padding: 0 15px;
 }
 
 .contain {

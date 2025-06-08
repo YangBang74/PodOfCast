@@ -96,11 +96,11 @@ const prices = [
 
 <template>
   <section
-    class="hero relative"
-    style="background: url('/hero-bg.png') no-repeat 0 0 / contain #f7ede8"
+    class="hero relative secont-bg"
+    style="background: url('/hero-bg.png') no-repeat 0 0 / container#f7ede8"
   >
     <div class="mx-auto text-center pb-20">
-      <div class="contain">
+      <div class="container">
         <h1 class="xl:text-6xl text-6xl font-bold pt-16">
           Your Daily <br /><span class="text-red">Podcast</span>
         </h1>
@@ -124,7 +124,7 @@ const prices = [
       </Slide>
     </Carousel>
     <div class="pt-20 pb-40">
-      <div class="contain">
+      <div class="container">
         <div class="flex md:flex-row flex-col gap-y-10 items-center justify-between border-y py-10">
           <h1 class="font-bold text-4xl">Supported by:</h1>
           <div
@@ -140,7 +140,7 @@ const prices = [
     <SectionVector color="red" />
   </section>
   <section class="my-40">
-    <div class="contain">
+    <div class="container">
       <h1 class="font-bold text-4xl text-center md:w-1/2 w-full mx-auto">
         Talk. Listen. Get inspired by every minute of it.
       </h1>
@@ -166,7 +166,7 @@ const prices = [
   </section>
   <Quote />
   <section class="py-40 bg-blue relative">
-    <div class="contain">
+    <div class="container">
       <div class="text-center">
         <h1 class="inline font-bold text-5xl mx-auto text-center relative w-full">
           What our listeners say
@@ -214,7 +214,7 @@ const prices = [
     <SectionVector color="black" />
   </section>
   <section class="py-40 relative">
-    <div class="contain">
+    <div class="container">
       <div class="text-center">
         <h1 class="relative inline text-5xl font-bold">
           Membership benefits
@@ -244,7 +244,7 @@ const prices = [
     <SectionVector color="black" />
   </section>
   <section class="py-40 relative secont-bg">
-    <div class="contain">
+    <div class="container">
       <h1 class="text-5xl text-center font-bold">Recent Episodes</h1>
       <p class="text-gray text-center mt-2.5">Available on your favorite platform</p>
       <div class="reltive flex flex-wrap justify-between items-start gap-y-5 gap-x-2 my-20">
@@ -291,7 +291,7 @@ const prices = [
     <SectionVector color="black" />
   </section>
   <section class="py-40 relative overflow-hidden">
-    <div class="contain">
+    <div class="container">
       <div class="text-center">
         <h1 class="inline relative font-bold text-5xl text-center">
           Become our sponser
@@ -401,10 +401,10 @@ const prices = [
     </div>
   </section>
   <section class="py-40 relative">
-    <div class="contain">
+    <div class="container">
       <h1 class="font-bold text-5xl text-center">Article and News</h1>
       <p class="text-gray text-center mt-3">News, tips, tricks and more</p>
-      <div class="flex flex-wrap justify-between mt-20">
+      <div class="flex flex-wrap justify-between mt-20 gap-5">
         <NewsCard
           v-for="(item, i) in blog.slice(0, 2)"
           :key="i"
@@ -420,7 +420,7 @@ const prices = [
     <SectionVector color="red" />
   </section>
   <section class="py-40 relative app">
-    <div class="contain">
+    <div class="container">
       <div class="text-center">
         <p
           class="text-sm px-1 text-red border border-red-500 rounded-sm inline-block text-center font-bold"
