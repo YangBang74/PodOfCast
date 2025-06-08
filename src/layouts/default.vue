@@ -4,10 +4,10 @@ import Button from '@/components/UI/Button.vue'
 </script>
 
 <template>
-  <header class="fixed w-full left-0 secont-bg z-100">
+  <header class="fixed w-full left-0 top-0 secont-bg z-100">
     <div class="contain">
-      <div class="flex flex-row items-center justify-between font-bold py-3">
-        <img src="/logo.svg" alt="PotOfCast" class="h-15" />
+      <div class="flex flex-row items-center justify-between font-bold py-3 text-sm">
+        <img src="/logo.svg" alt="PotOfCast" class="h-10" />
         <div class="flex sm:gap-15 gap-5">
           <RouterLink to="/">Episodes</RouterLink>
           <RouterLink to="/about">About</RouterLink>

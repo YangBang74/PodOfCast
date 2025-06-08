@@ -20,7 +20,7 @@ const props = defineProps<{
     :to="to"
     :class="props.class"
     v-if="props.btnType === 2"
-    class="px-7 py-2 rounded-lg text-sm border-3 whitespace-nowrap"
+    class="px-5 py-1 rounded-lg text-sm border-3 whitespace-nowrap"
   >
     {{ props.text }}
   </RouterLink>

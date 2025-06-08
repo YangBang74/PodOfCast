@@ -13,12 +13,8 @@
           <p>John Smith,</p>
           <p class="font-bold">Social Community Manager</p>
         </div>
-        <div class="absolute right-[-50px] top-[-60px]">
-          <img src="/Star-4.png" alt="" />
-        </div>
-        <div class="absolute left-[-70px] bottom-5">
-          <img src="/redVector.png" alt="" />
-        </div>
+        <img src="/Star-4.png" class="absolute md:block hidden right-[-50px] top-[-60px]" alt="" />
+        <img src="/redVector.png" class="absolute left-[-70px] bottom-5" alt="" />
       </div>
     </div>
   </section>
