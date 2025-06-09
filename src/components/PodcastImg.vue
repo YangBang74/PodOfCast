@@ -13,9 +13,9 @@ const props = defineProps<{
     :style="{ backgroundImage: `url(${props.img})` }"
   >
     <div class="flex gap-2.5 items-center self-end">
-      <Icon name="google" />
-      <Icon name="spotify" class="text-white" />
-      <Icon name="youtube" />
+      <a href="#"><Icon name="google" class="text-white hover:text-yellow-500" /></a>
+      <a href="#"><Icon name="spotify" class="text-white hover:text-green-500" /></a>
+      <a href="#"><Icon name="youtube" class="text-white hover:text-red-500" /></a>
     </div>
     <h3 class="font-bold mb-2 text-left text-blue text-3xl">{{ props.text }}</h3>
   </div>

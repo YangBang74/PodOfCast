@@ -44,7 +44,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
       </div>
     </header>
     <main class="pt-16 flex-1"><slot /></main>
-    <footer class="py-10">
+    <footer class="py-10 border-t border-gray-500">
       <div class="container">
         <div class="flex items-start justify-between gap-5 flex-wrap">
           <div class="space-y-6 5">
@@ -87,7 +87,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
         </div>
         <div class="border-t border-gray-500 flex items-center py-3 justify-between text-[12px]">
           <p class="text-gray">
-            ©2022. All Rights Reserved. <span class="text-red">Pod of Cast</span>
+            ©2025. All Rights Reserved. <span class="text-red">Pod of Cast</span>
           </p>
           <nav class="flex gap-6">
             <a href="/" class="terms relative">Terms</a>
