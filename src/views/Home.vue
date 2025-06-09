@@ -98,7 +98,7 @@ const prices = [
   <section
     data-aos="zoom-in fade-up"
     class="hero relative secont-bg"
-    style="background: url('/hero-bg.png') no-repeat 0 0 / container#f7ede8"
+    style="background: url('/hero-bg.png') no-repeat 0 0 / 100% #f7ede8"
   >
     <div class="mx-auto text-center pb-20">
       <div class="container">

@@ -1,5 +1,10 @@
 @import 'tailwindcss';
 
+html,
+body {
+  min-height: 100%;
+}
+
 body {
   background-color: #fff;
   font-family: 'Montserrat Alternates', sans-serif;
@@ -44,6 +49,10 @@ button {
 
 .drop-shadow {
   box-shadow: 3px 3px 0 0 #00000041;
+}
+
+.drop-shadow-red {
+  box-shadow: 6px 6px 0px 0px #cd4631;
 }
 
 .primary-bg {

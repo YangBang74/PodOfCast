@@ -43,7 +43,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
         </div>
       </div>
     </header>
-    <main class="pt-16 flex-1"><slot /></main>
+    <main class="flex-1 pt-16"><slot /></main>
     <footer class="py-10 border-t border-gray-500">
       <div class="container">
         <div class="flex items-start justify-between gap-5 flex-wrap">
