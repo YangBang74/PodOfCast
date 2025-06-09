@@ -96,7 +96,7 @@ const prices = [
 
 <template>
   <section
-    data-aos="fade-up"
+    data-aos="zoom-in fade-up"
     class="hero relative secont-bg"
     style="background: url('/hero-bg.png') no-repeat 0 0 / container#f7ede8"
   >
@@ -142,11 +142,11 @@ const prices = [
   </section>
   <section class="my-40">
     <div class="container">
-      <h1 class="font-bold text-4xl text-center md:w-1/2 w-full mx-auto">
+      <h1 class="font-bold text-4xl text-center md:w-1/2 w-full mx-auto" data-aos="zoom-in">
         Talk. Listen. Get inspired by every minute of it.
       </h1>
       <div class="my-20 flex justify-between md:items-end items-center md:flex-row flex-col">
-        <div class="flex flex-col justify-center gap-y-10">
+        <div data-aos="zoom-in" class="flex flex-col justify-center gap-y-10">
           <div class="h-69 w-69 flex justify-center mx-auto items-center">
             <img src="/home/think.png" alt="Some man think" />
           </div>
@@ -154,7 +154,7 @@ const prices = [
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
           </p>
         </div>
-        <div class="flex flex-col justify-center gap-y-10">
+        <div data-aos="zoom-in" class="flex flex-col justify-center gap-y-10">
           <div class="h-69 w-69 flex justify-center mx-auto items-center">
             <img src="/home/ideas.png" alt="Some man think" />
           </div>
@@ -169,12 +169,16 @@ const prices = [
   <section class="py-40 bg-blue relative">
     <div class="container">
       <div class="text-center">
-        <h1 class="inline font-bold text-5xl mx-auto text-center relative w-full">
+        <h1
+          data-aos="zoom-in"
+          class="inline font-bold text-5xl mx-auto text-center relative w-full"
+        >
           What our listeners say
           <img src="/sun.png" class="absolute top-[-50px] left-[-90px]" />
         </h1>
         <div class="text-gray my-5 text-center">Their experience throughout every platform</div>
         <Carousel
+          data-aos="zoom-in"
           itemsToShow="auto"
           :loop="true"
           :autoplay="5000"
@@ -217,7 +221,7 @@ const prices = [
   <section class="py-40 relative">
     <div class="container">
       <div class="text-center">
-        <h1 class="relative inline text-5xl font-bold">
+        <h1 data-aos="zoom-in" class="relative inline text-5xl font-bold">
           Membership benefits
           <img
             src="/home/title.png"
@@ -225,10 +229,13 @@ const prices = [
             class="md:block hidden absolute right-[-80px] top-[-80px]"
           />
         </h1>
-        <p class="text-gray text-xl mt-2.5">Become our sponsor and get all benefits</p>
+        <p data-aos="zoom-in" class="text-gray text-xl mt-2.5">
+          Become our sponsor and get all benefits
+        </p>
       </div>
       <div class="flex flex-wrap justify-between items-start gap-y-20 gap-x-5 mt-15">
         <div
+          data-aos="zoom-in"
           v-for="(item, i) in membership"
           :key="i"
           class="sm:w-[30%] w-1/1 flex-col flex items-center text-center gap-x-2.5"
@@ -238,7 +245,7 @@ const prices = [
           <p>{{ item.text }}</p>
         </div>
       </div>
-      <div class="mt-25 text-center pb-40">
+      <div class="mt-25 text-center pb-40" data-aos="zoom-in">
         <Button text="SEE PRICING" class="py-3 px-9 font-bold" to="/" :btn-type="1" />
       </div>
     </div>
@@ -246,12 +253,15 @@ const prices = [
   </section>
   <section class="py-40 relative secont-bg">
     <div class="container">
-      <h1 class="text-5xl text-center font-bold">Recent Episodes</h1>
-      <p class="text-gray text-center mt-2.5">Available on your favorite platform</p>
+      <h1 data-aos="zoom-in" class="text-5xl text-center font-bold">Recent Episodes</h1>
+      <p data-aos="zoom-in" class="text-gray text-center mt-2.5">
+        Available on your favorite platform
+      </p>
       <div class="reltive flex flex-wrap justify-between items-start gap-y-5 gap-x-2 my-20">
         <div
           v-for="(item, i) in podcast.reverse()"
           :key="i"
+          data-aos="zoom-in"
           class="shadow-2 border-3 flex-col rounded-xl p-4 gap-y-5 flex transition md:w-[49%] w-full bg-white"
         >
           <div class="flex justify-start gap-5">
@@ -285,7 +295,7 @@ const prices = [
           </div>
         </div>
       </div>
-      <div class="py-10 text-center">
+      <div class="py-10 text-center" data-aos="zoom-in">
         <Button text="BROWSE ALL EPISODES" to="/" :btn-type="1" class="py-6 px-9" />
       </div>
     </div>
@@ -294,7 +304,7 @@ const prices = [
   <section class="py-40 relative overflow-hidden">
     <div class="container">
       <div class="text-center">
-        <h1 class="inline relative font-bold text-5xl text-center">
+        <h1 data-aos="zoom-in" class="inline relative font-bold text-5xl text-center">
           Become our sponser
           <div class="absolute top-[-30px] left-[-50px]">
             <svg
@@ -319,12 +329,17 @@ const prices = [
             </svg>
           </div>
         </h1>
-        <p class="text-gray mt-4">Get exclusive episodes, merch and more</p>
+        <p data-aos="zoom-in" class="text-gray mt-4">Get exclusive episodes, merch and more</p>
       </div>
       <div
         class="mt-25 flex lg:flex-nowrap flex-wrap justify-between md:items-start items-center gap-5"
       >
-        <div class="sm:w-[48%] w-[90%] gap-y-5 mx-auto z-10" v-for="(item, i) in prices" :key="i">
+        <div
+          data-aos="zoom-in"
+          class="sm:w-[48%] w-[90%] gap-y-5 mx-auto z-10"
+          v-for="(item, i) in prices"
+          :key="i"
+        >
           <div
             class="rounded-lg border-3 pt-15 md:px-10 px-8 pb-10 flex flex-col sm:min-w-75 min-w-auto justify-between h-85"
             :class="item.popular ? 'border-red-500 secont-bg' : 'bg-white'"
@@ -403,10 +418,11 @@ const prices = [
   </section>
   <section class="py-40 relative">
     <div class="container">
-      <h1 class="font-bold text-5xl text-center">Article and News</h1>
-      <p class="text-gray text-center mt-3">News, tips, tricks and more</p>
+      <h1 class="font-bold text-5xl text-center" data-aos="zoom-in">Article and News</h1>
+      <p class="text-gray text-center mt-3" data-aos="zoom-in">News, tips, tricks and more</p>
       <div class="flex flex-wrap justify-between mt-20 gap-5">
         <NewsCard
+          data-aos="zoom-in"
           v-for="(item, i) in blog.slice(0, 2)"
           :key="i"
           :genre="item.genre"
@@ -420,7 +436,7 @@ const prices = [
     </div>
     <SectionVector color="red" />
   </section>
-  <section class="py-40 relative app">
+  <section class="py-40 relative app" data-aos="zoom-in">
     <div class="container">
       <div class="text-center">
         <p

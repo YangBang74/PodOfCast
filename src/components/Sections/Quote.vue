@@ -1,5 +1,5 @@
 <template>
-  <section class="my-40">
+  <section class="my-40" data-aos="zoom-in">
     <div class="container">
       <div class="secont-bg py-10 md:px-20 px-10 relative">
         <h1 class="font-bold text-center text-4xl">
