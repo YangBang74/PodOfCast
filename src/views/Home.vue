@@ -1,14 +1,16 @@
 <script setup lang="ts">
+//modules
+import 'vue3-carousel/carousel.css'
+import { Carousel, Slide, Navigation as CarouselNavigation } from 'vue3-carousel'
+
+//components
 import Button from '@/components/UI/Button.vue'
 import podcast from '../dates/podcasts'
 import PodcastImg from '@/components/PodcastImg.vue'
-import 'vue3-carousel/carousel.css'
-import { Carousel, Slide, Navigation as CarouselNavigation } from 'vue3-carousel'
 import Icon from '@/components/Icons/Icon.vue'
 import SectionVector from '@/components/UI/SectionVector.vue'
 import Quote from '@/components/Sections/Quote.vue'
 import coments from '@/dates/coments'
-
 import MobileApp from '@/components/Sections/MobileApp.vue'
 import RelatedaArticle from '@/components/Sections/RelatedaArticle.vue'
 

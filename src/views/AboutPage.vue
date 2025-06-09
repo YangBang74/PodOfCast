@@ -1,6 +1,12 @@
 <script setup>
+//modules
+import 'vue3-carousel/carousel.css'
+import { Carousel, Slide, Navigation as CarouselNavigation } from 'vue3-carousel'
+
+//components
 import Button from '@/components/UI/Button.vue'
 import Icon from '@/components/Icons/Icon.vue'
+import MobileApp from '@/components/Sections/MobileApp.vue'
 </script>
 <template>
   <section
@@ -152,6 +158,59 @@ import Icon from '@/components/Icons/Icon.vue'
       </div>
     </div>
   </section>
+  <section class="py-40 relative secont-bg">
+    <div class="container">
+      <div class="text-center">
+        <h1
+          data-aos="zoom-in"
+          class="inline font-bold text-5xl mx-auto text-center relative w-full"
+        >
+          Our Sponsor
+          <img src="/sun.png" class="absolute top-[-50px] left-[-90px]" />
+        </h1>
+        <div class="text-gray my-5 text-center">Our current official sponsor</div>
+        <Carousel
+          data-aos="zoom-in"
+          itemsToShow="auto"
+          :loop="true"
+          :autoplay="5000"
+          :gap="20"
+          :wrapAround="true"
+          :transition="500"
+          class="py-20 relative"
+        >
+          <Slide v-for="item in coment" :key="item.id">
+            <div class="bg-white text-left p-10 rounded-lg h-full shadow-sm">
+              <p class="text-7xl text-red font-bold">“</p>
+              <p class="max-w-80">{{ item.coment }}</p>
+              <p class="mt-3">{{ item.name }}</p>
+            </div>
+          </Slide>
+          <template #addons>
+            <CarouselNavigation class="text-black hover:text-red-500">
+              <template #prev>
+                <span>
+                  <Icon name="arrow-circle" :width="37" :height="37" />
+                </span>
+              </template>
+              <template #next>
+                <span>
+                  <Icon
+                    name="arrow-circle"
+                    class="rotate-180 hover:text-red-500"
+                    :width="37"
+                    :height="37"
+                  />
+                </span>
+              </template>
+            </CarouselNavigation>
+          </template>
+        </Carousel>
+      </div>
+    </div>
+    <SectionVector color="black" />
+  </section>
+  <MobileApp />
 </template>
 
 <style scoped></style>
