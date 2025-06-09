@@ -96,6 +96,7 @@ const prices = [
 
 <template>
   <section
+    data-aos="fade-up"
     class="hero relative secont-bg"
     style="background: url('/hero-bg.png') no-repeat 0 0 / container#f7ede8"
   >
