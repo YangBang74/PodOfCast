@@ -1,5 +1,6 @@
 <script setup>
 import Button from '@/components/UI/Button.vue'
+import Icon from '@/components/Icons/Icon.vue'
 </script>
 <template>
   <section
@@ -84,6 +85,69 @@ import Button from '@/components/UI/Button.vue'
             libero. Ante enim eget.
           </p>
           <p>Viverra at porttitor accumsan. Orci non here</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="my-20 pt-20">
+    <div class="container border-t border-gray-800">
+      <h1 class="font-bold text-4xl text-center my-20">Founder and Main Host</h1>
+      <div class="flex items-start justify-between gap-10 lg:flex-nowrap flex-wrap">
+        <div class="lg:w-[45%] w-full border-2 rounded drop-shadow flex justify-between p-5 gap-5">
+          <div class="w-1/2">
+            <img src="/about/avatar-1.png" alt="Avatar" class="rounded object-cover h-full" />
+          </div>
+          <div class="w-1/2 flex flex-col justify-between">
+            <div class="self-end">
+              <img src="/about/Face.png" alt="" />
+            </div>
+            <div>
+              <span class="text-sm">Host 1</span>
+              <h2 class="font-bold text-4xl">Porter Severus</h2>
+              <p class="text-sm text-gray my-5">
+                Lorem ipsum dolor sit amet con sectet piscing elit, sed do eiusmod tempor rarylet
+                podofcast.
+              </p>
+              <div
+                class="py-1 border-t border-gray-500 flex justify-end items-center gap-3 flex-wrap"
+              >
+                <span class="font-bold text-gray">follow me:</span>
+                <nav class="flex gap-3">
+                  <a href="#" class="hover:text-red-500"><Icon name="tiktok" /></a>
+                  <a href="#" class="hover:text-red-500"><Icon name="twitter" /></a>
+                  <a href="#" class="hover:text-red-500"><Icon name="instagram" /></a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-[45%] w-full border-2 rounded drop-shadow flex justify-between p-5 gap-5">
+          <div class="w-1/2">
+            <img src="/about/avatar-2.png" alt="Avatar" class="rounded object-cover h-full" />
+          </div>
+          <div class="w-1/2 flex flex-col justify-between">
+            <div class="self-end">
+              <img src="/about/Star.png" alt="" />
+            </div>
+            <div>
+              <span class="text-sm">Host 2</span>
+              <h2 class="font-bold text-4xl">Porter Severus</h2>
+              <p class="text-sm text-gray my-5">
+                Lorem ipsum dolor sit amet con sectet piscing elit, sed do eiusmod tempor rarylet
+                podofcast.
+              </p>
+              <div
+                class="py-1 border-t border-gray-500 flex justify-end items-center gap-3 flex-wrap"
+              >
+                <span class="font-bold text-gray">follow me:</span>
+                <nav class="flex gap-3">
+                  <a href="#" class="hover:text-red-500"><Icon name="tiktok" /></a>
+                  <a href="#" class="hover:text-red-500"><Icon name="twitter" /></a>
+                  <a href="#" class="hover:text-red-500"><Icon name="instagram" /></a>
+                </nav>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
