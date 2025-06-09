@@ -1,13 +1,12 @@
 <script setup lang="ts">
 const props = withDefaults(
   defineProps<{
-    width?: number
-    height?: number
+    size?: number
     name: string
     class?: string
   }>(),
   {
-    width: 22,
+    size: 22,
     height: 16,
   },
 )
@@ -15,8 +14,8 @@ const props = withDefaults(
 <template>
   <span v-if="name === 'youtube'" :class="props.class">
     <svg
-      :width="props.width"
-      :height="props.height"
+      :width="props.size"
+      :height="props.size"
       viewBox="0 0 22 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -33,8 +32,8 @@ const props = withDefaults(
   <span :class="props.class">
     <svg
       v-if="props.name === 'spotify'"
-      :width="props.width"
-      :height="props.height"
+      :width="props.size"
+      :height="props.size"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -57,8 +56,8 @@ const props = withDefaults(
   <span :class="props.class">
     <svg
       v-if="props.name === 'google'"
-      :width="props.width"
-      :height="props.height"
+      :width="props.size"
+      :height="props.size"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

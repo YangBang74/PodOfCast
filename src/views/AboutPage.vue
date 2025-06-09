@@ -92,7 +92,7 @@ import Icon from '@/components/Icons/Icon.vue'
   <section class="my-20 pt-20">
     <div class="container border-t border-gray-800">
       <h1 class="font-bold text-4xl text-center my-20">Founder and Main Host</h1>
-      <div class="flex items-start justify-between gap-10 lg:flex-nowrap flex-wrap">
+      <div class="flex items-start justify-center gap-10 lg:flex-nowrap flex-wrap">
         <div class="lg:w-[45%] w-full border-2 rounded drop-shadow flex justify-between p-5 gap-5">
           <div class="w-1/2">
             <img src="/about/avatar-1.png" alt="Avatar" class="rounded object-cover h-full" />

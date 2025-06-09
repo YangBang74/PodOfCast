@@ -2,17 +2,16 @@
 import Button from '@/components/UI/Button.vue'
 import podcast from '../dates/podcasts'
 import PodcastImg from '@/components/PodcastImg.vue'
-
 import 'vue3-carousel/carousel.css'
 import { Carousel, Slide, Navigation as CarouselNavigation } from 'vue3-carousel'
 import Icon from '@/components/Icons/Icon.vue'
 import SectionVector from '@/components/UI/SectionVector.vue'
 import Quote from '@/components/Sections/Quote.vue'
 import coments from '@/dates/coments'
-import blogs from '@/dates/blogs'
-import NewsCard from '@/components/NewsCard.vue'
 
-const blog = blogs
+import MobileApp from '@/components/Sections/MobileApp.vue'
+import RelatedaArticle from '@/components/Sections/RelatedaArticle.vue'
+
 const pod = podcast
 const coment = coments
 
@@ -416,49 +415,8 @@ const prices = [
       </div>
     </div>
   </section>
-  <section class="py-40 relative">
-    <div class="container">
-      <h1 class="font-bold text-5xl text-center" data-aos="zoom-in">Article and News</h1>
-      <p class="text-gray text-center mt-3" data-aos="zoom-in">News, tips, tricks and more</p>
-      <div class="flex flex-wrap justify-between mt-20 gap-5">
-        <NewsCard
-          data-aos="zoom-in"
-          v-for="(item, i) in blog.slice(0, 2)"
-          :key="i"
-          :genre="item.genre"
-          :img="item.image"
-          :title="item.title"
-          :decrip="item.article"
-          :tags="item.tags"
-          :date="item.date"
-        />
-      </div>
-    </div>
-    <SectionVector color="red" />
-  </section>
-  <section class="py-40 relative app" data-aos="zoom-in">
-    <div class="container">
-      <div class="text-center">
-        <p
-          class="text-sm px-1 text-red border border-red-500 rounded-sm inline-block text-center font-bold"
-        >
-          BETA
-        </p>
-        <h1 class="text-5xl font-bold mt-4 mb-8">
-          Available now <br />
-          Pod of Cast App
-        </h1>
-        <p class="text-sm text-gray mb-25">We just launched our podcast app!</p>
-        <Button text="DOWNLOAD NOW" to="/" :btn-type="1" class="py-5 px-9 font-bold" />
-        <div class="mt-13">
-          <p class="text-sm text-gray">Content also available on:</p>
-          <div class="flex justify-center items-center gap-3">
-            <Icon name="google" class="text-black" :height="24" :width="24" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <RelatedaArticle />
+  <MobileApp />
 </template>
 <style>
 .carousel__next,
@@ -468,9 +426,5 @@ const prices = [
 }
 .carousel__next {
   left: 55px;
-}
-
-.app {
-  background: url('/home/app.png') no-repeat bottom center / cover #edf3f7;
 }
 </style>
