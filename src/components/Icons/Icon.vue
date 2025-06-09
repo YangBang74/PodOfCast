@@ -358,8 +358,8 @@ const props = withDefaults(
   <svg
     v-if="name === 'arrow-circle'"
     :class="props.class"
-    :width="props.width"
-    :height="props.height"
+    :width="props.size"
+    :height="props.size"
     viewBox="0 0 40 40"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

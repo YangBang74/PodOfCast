@@ -10,7 +10,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="md:w-[49%] w-full rounded-lg border-3 p-4 box-shadow transition h-full">
+  <div class="md:w-[49%] w-full rounded-lg border-3 p-4 box-shadow transition h-full bg-white">
     <img :src="img" :alt="title" class="object-cover w-full min-h-80 mb-10 rounded-lg" />
     <div class="flex flex-col justify-between h-70">
       <div class="h-full">

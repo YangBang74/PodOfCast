@@ -7,6 +7,39 @@ import { Carousel, Slide, Navigation as CarouselNavigation } from 'vue3-carousel
 import Button from '@/components/UI/Button.vue'
 import Icon from '@/components/Icons/Icon.vue'
 import MobileApp from '@/components/Sections/MobileApp.vue'
+
+const partners = [
+  {
+    icon: 'google-text',
+    article:
+      'Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in sed sodales in mauris molestie. Eleifend estcon sctetur interdum eu in auctor. Gravida leo et.',
+  },
+  {
+    icon: 'spotify-text',
+    article:
+      'Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in sed sodales in mauris molestie. Eleifend estcon sctetur interdum eu in auctor. Gravida leo et.',
+  },
+  {
+    icon: 'youtube-text',
+    article:
+      'Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in sed sodales in mauris molestie. Eleifend estcon sctetur interdum eu in auctor. Gravida leo et.',
+  },
+  {
+    icon: 'google-text',
+    article:
+      'Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in sed sodales in mauris molestie. Eleifend estcon sctetur interdum eu in auctor. Gravida leo et.',
+  },
+  {
+    icon: 'spotify-text',
+    article:
+      'Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in sed sodales in mauris molestie. Eleifend estcon sctetur interdum eu in auctor. Gravida leo et.',
+  },
+  {
+    icon: 'youtube-text',
+    article:
+      'Quis dictum cursus faucibus mattis dignissim. Pellentes que purus in sed sodales in mauris molestie. Eleifend estcon sctetur interdum eu in auctor. Gravida leo et.',
+  },
+]
 </script>
 <template>
   <section
@@ -170,37 +203,40 @@ import MobileApp from '@/components/Sections/MobileApp.vue'
         </h1>
         <div class="text-gray my-5 text-center">Our current official sponsor</div>
         <Carousel
-          data-aos="zoom-in"
-          itemsToShow="auto"
+          itemsToShow="1"
           :loop="true"
           :autoplay="5000"
           :gap="20"
           :wrapAround="true"
+          snapAlign="start"
           :transition="500"
           class="py-20 relative"
+          :breakpoints="{
+            768: {
+              itemsToShow: '1.5',
+            },
+          }"
         >
-          <Slide v-for="item in coment" :key="item.id">
-            <div class="bg-white text-left p-10 rounded-lg h-full shadow-sm">
-              <p class="text-7xl text-red font-bold">“</p>
-              <p class="max-w-80">{{ item.coment }}</p>
-              <p class="mt-3">{{ item.name }}</p>
+          <Slide v-for="(item, index) in partners" :key="index" class="w-full h-full">
+            <div
+              class="bg-white text-center py-10 px-4 mt-2 rounded-lg h-full shadow-sm border-2 space-y-8"
+            >
+              <Icon :name="item.icon" class="mx-auto" />
+              <p class="border-t border-gray-700 text-center pt-8">
+                {{ item.article }}
+              </p>
             </div>
           </Slide>
           <template #addons>
-            <CarouselNavigation class="text-black hover:text-red-500">
+            <CarouselNavigation>
               <template #prev>
                 <span>
-                  <Icon name="arrow-circle" :width="37" :height="37" />
+                  <Icon name="arrow-circle" class="hover:text-red-500" :size="37" />
                 </span>
               </template>
               <template #next>
                 <span>
-                  <Icon
-                    name="arrow-circle"
-                    class="rotate-180 hover:text-red-500"
-                    :width="37"
-                    :height="37"
-                  />
+                  <Icon name="arrow-circle" class="rotate-180 hover:text-red-500" :size="37" />
                 </span>
               </template>
             </CarouselNavigation>
@@ -213,4 +249,13 @@ import MobileApp from '@/components/Sections/MobileApp.vue'
   <MobileApp />
 </template>
 
-<style scoped></style>
+<style>
+.carousel__next,
+.carousel__prev {
+  position: absolute;
+  top: 390px;
+}
+.carousel__next {
+  left: 55px;
+}
+</style>

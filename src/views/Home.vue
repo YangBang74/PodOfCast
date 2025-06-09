@@ -5,17 +5,21 @@ import { Carousel, Slide, Navigation as CarouselNavigation } from 'vue3-carousel
 
 //components
 import Button from '@/components/UI/Button.vue'
-import podcast from '../dates/podcasts'
 import PodcastImg from '@/components/PodcastImg.vue'
 import Icon from '@/components/Icons/Icon.vue'
 import SectionVector from '@/components/UI/SectionVector.vue'
 import Quote from '@/components/Sections/Quote.vue'
-import coments from '@/dates/coments'
 import MobileApp from '@/components/Sections/MobileApp.vue'
 import RelatedaArticle from '@/components/Sections/RelatedaArticle.vue'
 
+//dates
+import coments from '@/dates/coments'
+import podcast from '../dates/podcasts'
+import priceDate from '@/dates/prices'
+
 const pod = podcast
 const coment = coments
+const prices = priceDate
 
 const membership = [
   {
@@ -47,50 +51,6 @@ const membership = [
     img: '/home/Star.png',
     title: 'And much more!',
     text: 'Lorem ipsum dolor sit amet consectet pis cing elit, sed do eiusmod tempor.',
-  },
-]
-
-const prices = [
-  {
-    title: 'Member',
-    popular: false,
-    text: 'Lorem ipsum dolor sit amet consectetcing elit, sed do eiusmod tempor.',
-    price: '$9.99',
-    ul: 'What’s included:',
-    li: [
-      '• Exclusive Content',
-      '• 5% Discount on Merch',
-      '• Join the Community',
-      '• Livestreaming Access',
-    ],
-  },
-  {
-    title: 'Family',
-    popular: true,
-    text: 'Lorem ipsum dolor sit amet consectetcing elit, sed do eiusmod tempor.',
-    price: '$14.99',
-    ul: 'What’s included:',
-    li: [
-      '• Everything in Tier 1',
-      '• Free tickets to Events',
-      '• Limited Edition Merch',
-      '• Promote your Product',
-      '• Request Topic',
-    ],
-  },
-  {
-    title: 'Official',
-    popular: false,
-    text: 'Lorem ipsum dolor sit amet consectetcing elit, sed do eiusmod tempor.',
-    price: '$29.99',
-    ul: 'What’s included:',
-    li: [
-      '• Everything in Tier 2',
-      '• Exclusive Badge on Livestreaming',
-      '• Become an Official Sponsor',
-      '• Early Access to All Episodes',
-      '• Free Stikers and Merch',
-    ],
   },
 ]
 </script>
@@ -179,7 +139,6 @@ const prices = [
         </h1>
         <div class="text-gray my-5 text-center">Their experience throughout every platform</div>
         <Carousel
-          data-aos="zoom-in"
           itemsToShow="auto"
           :loop="true"
           :autoplay="5000"
@@ -196,20 +155,15 @@ const prices = [
             </div>
           </Slide>
           <template #addons>
-            <CarouselNavigation class="text-black hover:text-red-500">
+            <CarouselNavigation>
               <template #prev>
                 <span>
-                  <Icon name="arrow-circle" :width="37" :height="37" />
+                  <Icon name="arrow-circle" :size="37" class="hover:text-red-500" />
                 </span>
               </template>
               <template #next>
                 <span>
-                  <Icon
-                    name="arrow-circle"
-                    class="rotate-180 hover:text-red-500"
-                    :width="37"
-                    :height="37"
-                  />
+                  <Icon name="arrow-circle" class="rotate-180 hover:text-red-500" :size="37" />
                 </span>
               </template>
             </CarouselNavigation>
