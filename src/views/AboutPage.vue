@@ -7,6 +7,7 @@ import { Carousel, Slide, Navigation as CarouselNavigation } from 'vue3-carousel
 import Button from '@/components/UI/Button.vue'
 import Icon from '@/components/Icons/Icon.vue'
 import MobileApp from '@/components/Sections/MobileApp.vue'
+import FormInput from '@/components/UI/FormInput.vue'
 
 const partners = [
   {
@@ -245,6 +246,29 @@ const partners = [
       </div>
     </div>
     <SectionVector color="black" />
+  </section>
+  <section class="my-30">
+    <div class="container">
+      <h1 class="font-bold text-4xl text-center">Get in touchs</h1>
+      <p class="text-gray text-center my-5">Send your message to us</p>
+      <form
+        class="py-20 mt-10 border-t border-gray-700 max-w-180 mx-auto flex justify-between gap-x-5 gap-y-10 flex-wrap"
+      >
+        <FormInput name="name" label="Full name" type="text" place="John Dea" />
+        <FormInput name="mail" label="Email" type="email" place="johndoe@gmail.com" />
+        <FormInput name="tel" label="Phone" type="tel" place="Phone" />
+        <FormInput name="sub" label="Subject" type="text" place="Subject" />
+        <FormInput
+          name="mess"
+          label="Message"
+          type="textar"
+          place="Your message goes here..."
+          class="md:w-full min-h-40"
+        />
+        <p><span class="text-red">*</span>required</p>
+        <Button :btn-type="3" text="Send Message" class="font-bold py-5 px-8" />
+      </form>
+    </div>
   </section>
   <MobileApp />
 </template>

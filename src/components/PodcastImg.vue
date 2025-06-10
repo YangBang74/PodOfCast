@@ -3,12 +3,14 @@ import Icon from './Icons/Icon.vue'
 
 const props = defineProps<{
   img: string
+  id?: string
   text: string
 }>()
 </script>
 
 <template>
-  <div
+  <a
+    :href="`/podcast/${props.id}`"
     class="p-4 rounded-lg shadow bg-cover h-80 w-80 flex flex-col justify-between"
     :style="{ backgroundImage: `url(${props.img})` }"
   >
@@ -18,5 +20,5 @@ const props = defineProps<{
       <a href="#"><Icon name="youtube" class="text-white hover:text-red-500" /></a>
     </div>
     <h3 class="font-bold mb-2 text-left text-blue text-3xl">{{ props.text }}</h3>
-  </div>
+  </a>
 </template>

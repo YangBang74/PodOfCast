@@ -1,5 +1,6 @@
 export default [
   {
+    id: 1,
     title: 'Are you a Perplexed Mind Person?',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
@@ -12,6 +13,7 @@ export default [
     tags: ['mind-behaviour', 'health'],
   },
   {
+    id: 2,
     title: 'Type of Social Classes of People',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
@@ -24,6 +26,7 @@ export default [
     tags: ['social class', 'wealth'],
   },
   {
+    id: 3,
     title: 'How to Deal with Self–Confidence',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
@@ -36,6 +39,7 @@ export default [
     tags: ['self-esteem', 'health'],
   },
   {
+    id: 4,
     title: "Women's Rights? Is it alright?",
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
@@ -48,6 +52,7 @@ export default [
     tags: ['women’s rights'],
   },
   {
+    id: 5,
     title: 'Tesla Autopilot Controversy',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
@@ -60,6 +65,7 @@ export default [
     tags: ['automation', 'tech'],
   },
   {
+    id: 6,
     title: 'Pandemic Becoming Endemic',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',

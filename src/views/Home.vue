@@ -82,7 +82,7 @@ const membership = [
       class="py-20"
     >
       <Slide v-for="item in pod" :key="item.id">
-        <PodcastImg :img="item.img" :text="item.imgText" />
+        <PodcastImg :img="item.img" :text="item.imgText" :id="item.id" />
       </Slide>
     </Carousel>
     <div class="pt-20 pb-40">

@@ -15,6 +15,11 @@ const router = createRouter({
       name: 'about',
       component: () => import('../views/AboutPage.vue'),
     },
+    {
+      path: '/podcast/:id',
+      component: () => import('../views/PodcastPage.vue'),
+      props: true,
+    },
   ],
 })
 
