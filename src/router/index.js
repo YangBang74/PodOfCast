@@ -30,6 +30,11 @@ const router = createRouter({
       name: 'blog',
       component: () => import('../views/BlogPage.vue'),
     },
+    {
+      path: '/blogs/:id',
+      component: () => import('../views/SingleBlog.vue'),
+      props: true,
+    },
   ],
 })
 

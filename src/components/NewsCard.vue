@@ -14,9 +14,11 @@ defineProps<{
     <div class="flex flex-col justify-between h-65">
       <div class="h-full">
         <p class="text-gray font-bold text-sm mb-2">{{ blog.genre }}</p>
-        <a class="text-4xl font-bold hover:text-red-500 transition cursor-pointer line-clamp-2">{{
-          blog.title
-        }}</a>
+        <a
+          :href="`/blogs/${blog.id}`"
+          class="text-4xl font-bold hover:text-red-500 transition cursor-pointer line-clamp-2"
+          >{{ blog.title }}</a
+        >
         <p class="text-gray text-sm mb-2 mt-2 line-clamp-2">
           {{ blog.article }}
         </p>

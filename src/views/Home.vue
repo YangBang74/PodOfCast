@@ -93,9 +93,9 @@ const membership = [
           <div
             class="flex sm:items-center justify-between gap-5 md:w-1/2 w-full sm:flex-row flex-col gap-y-10 items-start"
           >
-            <Icon name="spotify-text" class="text-white hover:text-green-500" />
-            <Icon name="google-text" class="text-white hover:text-yellow-500" />
-            <Icon name="youtube-text" class="text-white hover:text-red-500" />
+            <Icon name="spotify-text" class="text-black" />
+            <Icon name="google-text" />
+            <Icon name="youtube-text" />
           </div>
         </div>
       </div>
