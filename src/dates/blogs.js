@@ -2,6 +2,7 @@ export default [
   {
     id: 1,
     genre: 'Health',
+    category: ['All', 'Tips & Trick', 'Productivity'],
     title: 'How to Build a Healthy Morning Routine',
     article:
       "Creating a consistent morning routine can improve your physical and mental health. Here's a guide to starting your day right.",
@@ -12,6 +13,7 @@ export default [
   {
     id: 2,
     genre: 'Travel',
+    category: ['All', 'Tips & Trick'],
     title: 'Top 5 Hidden Gems in Europe',
     article:
       'Skip the crowded tourist traps and explore these lesser-known, yet stunning destinations across Europe.',
@@ -22,6 +24,7 @@ export default [
   {
     id: 3,
     genre: 'Finance',
+    category: ['All', 'Business', 'Tips & Trick'],
     title: 'Investing for Beginners: Where to Start',
     article:
       'New to investing? Learn the fundamentals to build a strong financial future, even with a small budget.',
@@ -32,6 +35,7 @@ export default [
   {
     id: 4,
     genre: 'Education',
+    category: ['All', 'News', 'Productivity'],
     title: 'The Future of Online Learning',
     article:
       "Online learning platforms have revolutionized education. Here's how digital classrooms are reshaping the academic world.",
@@ -42,6 +46,7 @@ export default [
   {
     id: 5,
     genre: 'Environment',
+    category: ['All', 'Tips & Trick', 'News'],
     title: '5 Simple Ways to Live More Sustainably',
     article:
       "Small changes in your daily habits can significantly reduce your environmental impact. Here's how to start.",
@@ -52,6 +57,7 @@ export default [
   {
     id: 6,
     genre: 'Music',
+    category: ['All', 'News'],
     title: 'The Comeback of Vinyl Records',
     article:
       'Vinyl is back and booming. Discover why this classic format is making waves in the digital age.',
@@ -62,6 +68,7 @@ export default [
   {
     id: 7,
     genre: 'Fashion',
+    category: ['All', 'Tips & Trick'],
     title: 'Minimalist Fashion: Less Is More',
     article:
       'Minimalism is taking over the fashion world. Learn how to create a stylish and sustainable wardrobe with fewer pieces.',
@@ -72,6 +79,7 @@ export default [
   {
     id: 8,
     genre: 'Gaming',
+    category: ['All', 'News'],
     title: 'The Evolution of Indie Games',
     article:
       'Indie games are pushing creative boundaries and gaining popularity. Here’s how independent developers are changing the industry.',
@@ -82,6 +90,7 @@ export default [
   {
     id: 9,
     genre: 'Food',
+    category: ['All', 'Tips & Trick', 'Productivity'],
     title: 'Plant-Based Diets: What You Need to Know',
     article:
       "Going plant-based is more than a trend—it's a lifestyle. Here's what to expect and how to start.",

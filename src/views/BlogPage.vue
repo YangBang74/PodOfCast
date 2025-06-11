@@ -1,17 +1,17 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import podcast from '../dates/podcasts'
 import MobileApp from '@/components/Sections/MobileApp.vue'
-import Episodes from '@/components/Episodes.vue'
+import NewsCard from '@/components/NewsCard.vue'
+import blogs from '../dates/blogs'
 
 const selectCategory = ref<string>('All')
 
-const category: string[] = ['All', 'Business', 'Comedy', 'Education', 'Health', 'News', 'Tech']
+const category: string[] = ['All', 'Business', 'News', 'Tips & Trick', 'Podcast', 'Productivity']
 
 const filteredPods = computed(() => {
   return selectCategory.value === 'All'
-    ? podcast
-    : podcast.filter((p) => p.category === selectCategory.value)
+    ? blogs
+    : blogs.filter((p) => p.category.includes(selectCategory.value))
 })
 </script>
 
@@ -24,9 +24,10 @@ const filteredPods = computed(() => {
     <div class="mx-auto text-center pb-25">
       <div class="container">
         <h1 class="xl:text-6xl text-6xl font-bold pt-16">
-          Episodes <br /><span class="text-red">Pod of Cast</span>
+          Article <br />
+          and <span class="text-red">News</span>
         </h1>
-        <p class="mt-10 mb-10 text-gray max-w-88 mx-auto">
+        <p class="mt-10 mb-10 text-gray max-w-140 mx-auto">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut
           labore et dolore magna aliqua. Ut enim ad minim veniam–quis.
         </p>
@@ -37,7 +38,7 @@ const filteredPods = computed(() => {
     <div class="container">
       <div class="text-center">
         <h1 data-aos="zoom-in" class="inline relative font-bold text-5xl text-center">
-          Latest Episode
+          Latest Posts
           <div class="absolute top-[-30px] left-[-50px]">
             <svg
               width="64"
@@ -77,9 +78,11 @@ const filteredPods = computed(() => {
         </button>
       </div>
       <div class="relative flex flex-wrap justify-between items-start gap-y-5 gap-x-2 my-20">
-        <Episodes :podcast="filteredPods" />
+        <NewsCard data-aos="zoom-in" v-for="(item, i) in filteredPods" :key="i" :blog="item" />
       </div>
     </div>
   </section>
   <MobileApp />
 </template>
+
+<style scoped></style>

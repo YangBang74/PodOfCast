@@ -17,13 +17,18 @@ const router = createRouter({
     },
     {
       path: '/episodes',
+      name: 'episodes',
       component: () => import('../views/EpisodesPage.vue'),
-      props: true,
     },
     {
       path: '/episodes/:id',
       component: () => import('../views/PodcastPage.vue'),
       props: true,
+    },
+    {
+      path: '/blog',
+      name: 'blog',
+      component: () => import('../views/BlogPage.vue'),
     },
   ],
 })

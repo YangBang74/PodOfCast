@@ -9,17 +9,7 @@ const blog = blogs
       <h1 class="font-bold text-5xl text-center" data-aos="zoom-in">Article and News</h1>
       <p class="text-gray text-center mt-3" data-aos="zoom-in">News, tips, tricks and more</p>
       <div class="flex flex-wrap justify-between mt-20 gap-5">
-        <NewsCard
-          data-aos="zoom-in"
-          v-for="(item, i) in blog.slice(0, 2)"
-          :key="i"
-          :genre="item.genre"
-          :img="item.image"
-          :title="item.title"
-          :decrip="item.article"
-          :tags="item.tags"
-          :date="item.date"
-        />
+        <NewsCard data-aos="zoom-in" v-for="(item, i) in blog.slice(0, 2)" :key="i" :blog="item" />
       </div>
     </div>
     <SectionVector color="red" />

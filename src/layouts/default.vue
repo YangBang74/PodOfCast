@@ -34,7 +34,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
           <div class="flex sm:gap-15 gap-5">
             <RouterLink to="/episodes">Episodes</RouterLink>
             <RouterLink to="/about">About</RouterLink>
-            <RouterLink to="/">More</RouterLink>
+            <RouterLink to="/blog">More</RouterLink>
           </div>
           <div class="lg:flex hidden justify-end gap-5">
             <Button text="RECENT EPISODES" :btn-type="2" to="/" />
