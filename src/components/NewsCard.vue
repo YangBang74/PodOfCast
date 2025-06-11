@@ -9,19 +9,19 @@ defineProps<{
     <img
       :src="blog.image"
       :alt="blog.title"
-      class="object-cover w-full max-h-80 mb-10 aspect-[1/1] rounded-lg"
+      class="object-cover w-full max-h-80 mb-5 aspect-[1/1] rounded-lg"
     />
-    <div class="flex flex-col justify-between h-70">
+    <div class="flex flex-col justify-between h-65">
       <div class="h-full">
         <p class="text-gray font-bold text-sm mb-2">{{ blog.genre }}</p>
         <a class="text-4xl font-bold hover:text-red-500 transition cursor-pointer line-clamp-2">{{
           blog.title
         }}</a>
-        <p class="text-gray text-sm mb-2 mt-5 line-clamp-5">
+        <p class="text-gray text-sm mb-2 mt-2 line-clamp-2">
           {{ blog.article }}
         </p>
       </div>
-      <div class="flex justify-between items-center gap-10 mt-5 pt-5 border-t border-gray-400">
+      <div class="flex justify-between items-center gap-10n pt-5 border-t border-gray-400">
         <div class="flex items-center gap-3">
           <div
             class="border border-gray-600 rounded-sm text-gray py-1 px-3"

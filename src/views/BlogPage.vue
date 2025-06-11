@@ -3,15 +3,20 @@ import { ref, computed } from 'vue'
 import MobileApp from '@/components/Sections/MobileApp.vue'
 import NewsCard from '@/components/NewsCard.vue'
 import blogs from '../dates/blogs'
+import Icon from '@/components/Icons/Icon.vue'
 
 const selectCategory = ref<string>('All')
+const searchQuery = ref<string>('')
 
 const category: string[] = ['All', 'Business', 'News', 'Tips & Trick', 'Podcast', 'Productivity']
 
 const filteredPods = computed(() => {
-  return selectCategory.value === 'All'
-    ? blogs
-    : blogs.filter((p) => p.category.includes(selectCategory.value))
+  const byCategory =
+    selectCategory.value === 'All'
+      ? blogs
+      : blogs.filter((p) => p.category.includes(selectCategory.value))
+
+  return byCategory.filter((p) => p.title.toLowerCase().includes(searchQuery.value.toLowerCase()))
 })
 </script>
 
@@ -21,17 +26,28 @@ const filteredPods = computed(() => {
     class="hero relative secont-bg w-full"
     style="background: url('/hero-bg.png') no-repeat 0 0 / 100% #f7ede8"
   >
-    <div class="mx-auto text-center pb-25">
+    <div class="mx-auto text-center">
       <div class="container">
         <h1 class="xl:text-6xl text-6xl font-bold pt-16">
           Article <br />
           and <span class="text-red">News</span>
         </h1>
-        <p class="mt-10 mb-10 text-gray max-w-140 mx-auto">
+        <p class="mt-10 text-gray max-w-140 mx-auto">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut
           labore et dolore magna aliqua. Ut enim ad minim veniam–quis.
         </p>
       </div>
+    </div>
+    <div
+      class="relative mx-auto -bottom-5 flex items-centers mt-10 max-w-120 bg-white border-3 py-5 pr-10 pl-7 rounded-2xl"
+    >
+      <Icon name="search" />
+      <input
+        v-model="searchQuery"
+        type="text"
+        placeholder="Search..."
+        class="w-full ml-3 max-w-xl text-xl outline-0 focus:border-0"
+      />
     </div>
   </section>
   <section class="my-40">
@@ -78,7 +94,12 @@ const filteredPods = computed(() => {
         </button>
       </div>
       <div class="relative flex flex-wrap justify-between items-start gap-y-5 gap-x-2 my-20">
-        <NewsCard data-aos="zoom-in" v-for="(item, i) in filteredPods" :key="i" :blog="item" />
+        <NewsCard
+          data-aos="zoom-in"
+          v-for="(item, i) in filteredPods.reverse()"
+          :key="i"
+          :blog="item"
+        />
       </div>
     </div>
   </section>
