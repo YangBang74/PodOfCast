@@ -11,7 +11,7 @@ const props = defineProps<{
 
 <template>
   <a
-    :href="`/podcast/${props.id}`"
+    :href="`/episodes/${props.id}`"
     class="p-4 rounded-lg shadow bg-cover h-80 w-80 flex flex-col justify-between"
     :style="{ backgroundImage: `url(${props.img})` }"
     :class="props.class"

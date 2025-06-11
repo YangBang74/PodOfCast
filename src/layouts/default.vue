@@ -30,9 +30,9 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
     >
       <div class="container">
         <div class="flex flex-row items-center justify-between font-bold py-3 text-sm">
-          <img src="/logo.svg" alt="PotOfCast" class="h-10" />
+          <RouterLink to="/"><img src="/logo.svg" alt="PotOfCast" class="h-10" /></RouterLink>
           <div class="flex sm:gap-15 gap-5">
-            <RouterLink to="/">Episodes</RouterLink>
+            <RouterLink to="/episodes">Episodes</RouterLink>
             <RouterLink to="/about">About</RouterLink>
             <RouterLink to="/">More</RouterLink>
           </div>
