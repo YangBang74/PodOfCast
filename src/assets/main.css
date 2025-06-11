@@ -35,6 +35,10 @@ button {
   background-color: #cd4631;
 }
 
+.border-red {
+  border-color: #cd4631;
+}
+
 .text-gray {
   color: #4d4d4d;
 }
@@ -53,6 +57,10 @@ button {
 
 .drop-shadow-red {
   box-shadow: 6px 6px 0px 0px #cd4631;
+}
+
+.drop-shadow-blue {
+  box-shadow: 12px 12px 0px 0px #81adc8;
 }
 
 .primary-bg {

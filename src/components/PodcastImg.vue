@@ -5,6 +5,7 @@ const props = defineProps<{
   img: string
   id?: string
   text: string
+  class?: string
 }>()
 </script>
 
@@ -13,6 +14,7 @@ const props = defineProps<{
     :href="`/podcast/${props.id}`"
     class="p-4 rounded-lg shadow bg-cover h-80 w-80 flex flex-col justify-between"
     :style="{ backgroundImage: `url(${props.img})` }"
+    :class="props.class"
   >
     <div class="flex gap-2.5 items-center self-end">
       <a href="#"><Icon name="google" class="text-white hover:text-yellow-500" /></a>
