@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import podcast from '../dates/podcasts'
 import PodcastImg from '@/components/PodcastImg.vue'
 import MobileApp from '@/components/Sections/MobileApp.vue'
 import Button from '@/components/UI/Button.vue'
-
+import Episodes from '@/components/Episodes.vue'
 const route = useRoute()
 const id = Number(route.params.id)
-const selectCategory = ref<string | null>(null)
+const selectCategory = ref<string>('All')
 const pod = podcast.find((p) => p.id === id)
 
 const category: string[] = ['All', 'Business', 'Comedy', 'Education', 'Health', 'News', 'Tech']
@@ -20,6 +20,12 @@ const educationPods = podcast.filter((p) => p.category === 'Education')
 const healthPods = podcast.filter((p) => p.category === 'Health')
 const newsPods = podcast.filter((p) => p.category === 'News')
 const techPods = podcast.filter((p) => p.category === 'Tech')
+
+const filteredPods = computed(() => {
+  return selectCategory.value === 'All'
+    ? podcast
+    : podcast.filter((p) => p.category === selectCategory.value)
+})
 </script>
 
 <template>
@@ -120,17 +126,22 @@ const techPods = podcast.filter((p) => p.category === 'Tech')
           </div>
         </h1>
       </div>
-      <div class="flex items-center justify-between mt-32">
+      <div
+        class="flex items-center justify-between mt-32 pb-5 border-b-2 border-gray-700 flex-wrap"
+      >
         <button
-          v-for="i in category"
-          :key="i"
+          v-for="select in category"
+          :key="select"
           type="button"
           class="py-2 px-4 font-bold text-2xl"
-          :class="{ 'text-red': selectCategory === i }"
-          @click="selectCategory = i"
+          :class="{ 'text-red': selectCategory === select }"
+          @click="selectCategory = select"
         >
-          {{ i }}
+          {{ select }}
         </button>
+      </div>
+      <div class="relative flex flex-wrap justify-between items-start gap-y-5 gap-x-2 my-20">
+        <Episodes :podcast="filteredPods" />
       </div>
     </div>
   </section>
