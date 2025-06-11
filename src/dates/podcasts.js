@@ -3,7 +3,7 @@ export default [
     id: 1,
     title: 'Are you a Perplexed Mind Person?',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
     img: '/pod/pod-1.png',
     imgText: 'Perplexed Mind',
     eps: 'Eps. 1',
@@ -11,12 +11,13 @@ export default [
     authorImg: '/author-1.png',
     date: 'Sep 22, 2021',
     tags: ['mind-behaviour', 'health'],
+    category: 'Health',
   },
   {
     id: 2,
     title: 'Type of Social Classes of People',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
     img: '/pod/pod-2.png',
     imgText: 'Social Class',
     eps: 'Eps. 2',
@@ -24,12 +25,13 @@ export default [
     authorImg: '/author-1.png',
     date: 'Sep 22, 2021',
     tags: ['social class', 'wealth'],
+    category: 'Business',
   },
   {
     id: 3,
     title: 'How to Deal with Self–Confidence',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
     img: '/pod/pod-3.png',
     imgText: 'Self–confidence',
     eps: 'Eps. 3',
@@ -37,12 +39,13 @@ export default [
     authorImg: '/author-1.png',
     date: 'Sep 22, 2021',
     tags: ['self-esteem', 'health'],
+    category: 'Education',
   },
   {
     id: 4,
     title: "Women's Rights? Is it alright?",
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
     img: '/pod/pod-4.png',
     imgText: 'Women’s right',
     eps: 'Eps. 4',
@@ -50,12 +53,13 @@ export default [
     authorImg: '/author-1.png',
     date: 'Sep 22, 2021',
     tags: ['women’s rights'],
+    category: 'News',
   },
   {
     id: 5,
     title: 'Tesla Autopilot Controversy',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
     img: '/pod/pod-5.png',
     imgText: 'Tesla Autopilot',
     eps: 'Eps. 5',
@@ -63,12 +67,13 @@ export default [
     authorImg: '/author-1.png',
     date: 'Sep 22, 2021',
     tags: ['automation', 'tech'],
+    category: 'Tech',
   },
   {
     id: 6,
     title: 'Pandemic Becoming Endemic',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
     img: '/pod/pod-6.png',
     imgText: 'Perplexed Mind',
     eps: 'Eps. 6',
@@ -76,5 +81,6 @@ export default [
     authorImg: '/author-1.png',
     date: 'Sep 22, 2021',
     tags: ['health'],
+    category: 'Health',
   },
 ]
