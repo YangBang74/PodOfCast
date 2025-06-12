@@ -7,6 +7,7 @@ const props = defineProps<{
 
 <template>
   <svg
+    data-aos="zoom-in"
     class="absolute bottom-[-80px] left-1/2 translate-[0 -100%] mx-auto z-10"
     width="46"
     height="154"

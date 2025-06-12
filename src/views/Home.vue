@@ -18,7 +18,6 @@ import podcast from '../dates/podcasts'
 import priceDate from '@/dates/prices'
 import Episodes from '@/components/Episodes.vue'
 
-const pod = podcast
 const coment = coments
 const prices = priceDate
 
@@ -55,7 +54,6 @@ const membership = [
   },
 ]
 </script>
-
 <template>
   <section
     data-aos="zoom-in fade-up"
@@ -75,14 +73,13 @@ const membership = [
     </div>
     <Carousel
       itemsToShow="auto"
-      :loop="true"
       :autoplay="3000"
       :gap="20"
       :wrapAround="true"
       :transition="500"
       class="py-20"
     >
-      <Slide v-for="item in pod" :key="item.id">
+      <Slide v-for="item in podcast" :key="item.id">
         <PodcastImg :img="item.img" :text="item.imgText" :id="item.id" />
       </Slide>
     </Carousel>
