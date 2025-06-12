@@ -17,7 +17,7 @@ defineProps<{
       <div>
         <h3 class="font-bold text-xl mt-3 mb-4">
           <span class="text-red">{{ item.eps }}</span> <br />
-          {{ item.title }}
+          <RouterLink :to="`/episodes/${item.id}`">{{ item.title }}</RouterLink>
         </h3>
         <p class="line-clamp-2 text-gray-600 pt-4 border-t text-sm border-gray-600">
           {{ item.description }}
